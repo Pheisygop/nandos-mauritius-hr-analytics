@@ -1,0 +1,11 @@
+﻿Unit,Scope,ReportsTo,ReportingStatus
+General Manager,Central Support,,Parent not supplied
+Area / Operations Manager,Central Support,General Manager,Confirmed by user
+Patrao,Casa,Area / Operations Manager,Confirmed direct reporting by user
+Assistant Manager,Casa,Patrao,Casa hierarchy supplied by user
+Training and Development Manager,Central Support,Area / Operations Manager,Confirmed by user
+Guest Experience Manager,Central Support,Training and Development Manager,Assistant relationship supplied by user
+Head of People,Central Support,,Parent not supplied
+HR team,Central Support,Head of People,Confirmed by user
+Finance team,Central Support,,Parent and team size not supplied
+Marketing team,Central Support,,Parent and team size not supplied

@@ -1,0 +1,51 @@
+NANDO'S MAURITIUS HR ANALYTICS — NATIVE POWER BI PROJECT
+Prepared for PHEISEL Gopito
+
+1. Extract the whole ZIP with Windows "Extract All".
+2. Keep Nandos_Mauritius_HR.pbip and the Nandos_HR.Report and
+   Nandos_HR.SemanticModel folders together. Do not move the PBIP alone.
+3. Double-click Nandos_Mauritius_HR.pbip in Power BI Desktop.
+   If Windows asks, choose Power BI Desktop. Alternatively open Desktop,
+   choose File > Open > Browse, and select the PBIP file.
+4. Click Home > Refresh. A project has no preloaded Desktop cache here;
+   refreshing loads the embedded simulated data. No CSV file-path setup
+   or web connection is required for this embedded snapshot.
+5. Use the five report tabs along the bottom. The reporting month starts
+   at October 2026. Use the month, casa and department dropdowns.
+6. Use File > Save As and choose Power BI Desktop (.pbix) when you want
+   a single PBIX file. Keep this original project as an editable backup.
+
+Requires a current Power BI Desktop release supporting PBIP and PBIR.
+If your version cannot open the file, update Power BI Desktop first.
+If an error remains, share its exact text or screenshot so it can be fixed.
+
+WHAT IS INCLUDED
+- Five native report page definitions, 73 visuals, 7 import tables,
+  40 DAX measures, six relationships, synced slicers and report theme.
+- All source data is simulated. Current headcount and payroll cover
+  casa staff only. Central Support is mapped as an organisation reference.
+- Original CSV files, source generators, manual guide, HTML companion
+  dashboard and PNG previews are retained.
+
+VALIDATION LIMIT
+Microsoft JSON-schema validation passed for 84 project/report files.
+Embedded CSV bytes and all chart field/relationship references were checked.
+Power BI Desktop is not available in this environment, so the project has
+not been opened, DAX-executed or visually verified in Desktop. It is a
+generated native project, not a Desktop-tested PBIX. First opening and
+refresh on your Windows laptop completes that verification.
+
+REFRESH AND EDITING
+Home > Refresh reloads the embedded snapshot; it does not read the CSV
+files in data. To update that snapshot, regenerate data and then run
+build_native_powerbi.py, or replace the Power Query sources in Desktop
+with your chosen files. The optional manual PowerQuery_Function.m uses
+external CSV files and is not the native project's default source.
+
+OPENING REFERENCE
+https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-overview
+
+CORRECTION: This revision fixes the Hires/Exits column-versus-measure
+name collision. Measures are now Total Hires and Total Exits. Close the
+failed project, extract this ZIP into a NEW folder and open the PBIP
+from that new folder to avoid opening the older version again.

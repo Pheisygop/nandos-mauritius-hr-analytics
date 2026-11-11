@@ -1,0 +1,235 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "visual_071",
+  "position": {
+    "x": 24,
+    "y": 288,
+    "z": 10000,
+    "height": 360,
+    "width": 800,
+    "tabOrder": 10000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Roles"
+                    }
+                  },
+                  "Property": "Role"
+                }
+              },
+              "queryRef": "Roles.Role",
+              "nativeQueryRef": "Role"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "HRMonthly"
+                    }
+                  },
+                  "Property": "Target Headcount"
+                }
+              },
+              "queryRef": "HRMonthly.Target Headcount",
+              "nativeQueryRef": "Target Headcount",
+              "displayName": "Baseline"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "HRMonthly"
+                    }
+                  },
+                  "Property": "Closing Headcount"
+                }
+              },
+              "queryRef": "HRMonthly.Closing Headcount",
+              "nativeQueryRef": "Closing Headcount",
+              "displayName": "People"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "HRMonthly"
+                    }
+                  },
+                  "Property": "Closing FTE"
+                }
+              },
+              "queryRef": "HRMonthly.Closing FTE",
+              "nativeQueryRef": "Closing FTE",
+              "displayName": "FTE"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "HRMonthly"
+                    }
+                  },
+                  "Property": "Unfilled Posts"
+                }
+              },
+              "queryRef": "HRMonthly.Unfilled Posts",
+              "nativeQueryRef": "Unfilled Posts",
+              "displayName": "Unfilled"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "HRMonthly"
+                    }
+                  },
+                  "Property": "Brand Ambassador Headcount"
+                }
+              },
+              "queryRef": "HRMonthly.Brand Ambassador Headcount",
+              "nativeQueryRef": "Brand Ambassador Headcount",
+              "displayName": "Ambassadors"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "HRMonthly"
+                  }
+                },
+                "Property": "Closing Headcount"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "grid": [
+        {
+          "properties": {
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Role coverage · planning baseline versus workforce'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#242B32'"
+                    }
+                  }
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

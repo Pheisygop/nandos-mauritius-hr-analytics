@@ -1,0 +1,97 @@
+// Create each measure separately using Modeling > New measure.
+// Store in HRMonthly. Relationships and types are documented in README.md.
+
+Closing Headcount =
+VAR M = MAX ( 'Calendar'[MonthStart] )
+RETURN CALCULATE ( SUM ( HRMonthly[ClosingHeadcount] ), REMOVEFILTERS ( 'Calendar' ), TREATAS ( { M }, HRMonthly[MonthStart] ) )
+
+Opening Headcount =
+VAR M = MIN ( 'Calendar'[MonthStart] )
+RETURN CALCULATE ( SUM ( HRMonthly[OpeningHeadcount] ), REMOVEFILTERS ( 'Calendar' ), TREATAS ( { M }, HRMonthly[MonthStart] ) )
+
+Total Hires = SUM ( HRMonthly[Hires] )
+
+Total Exits = SUM ( HRMonthly[Exits] )
+
+Voluntary Exits = SUM ( HRMonthly[VoluntaryExits] )
+
+Average Headcount =
+AVERAGEX (
+    VALUES ( 'Calendar'[MonthStart] ),
+    CALCULATE ( DIVIDE ( SUM ( HRMonthly[OpeningHeadcount] ) + SUM ( HRMonthly[ClosingHeadcount] ), 2 ) )
+)
+
+Turnover Rate = DIVIDE ( [Total Exits], [Average Headcount] )
+
+Voluntary Turnover Rate = DIVIDE ( [Voluntary Exits], [Average Headcount] )
+
+Headcount Reconciliation = [Opening Headcount] + [Total Hires] - [Total Exits] - [Closing Headcount]
+
+Scheduled Days = SUM ( HRMonthly[ScheduledDays] )
+
+Worked Days = SUM ( HRMonthly[WorkedDays] )
+
+Absent Days = SUM ( HRMonthly[AbsentDays] )
+
+Paid Leave Days = SUM ( HRMonthly[PaidLeaveDays] )
+
+Absence Rate = DIVIDE ( [Absent Days], [Scheduled Days] )
+
+Attendance Rate = DIVIDE ( [Worked Days], [Scheduled Days] )
+
+Overtime Hours = SUM ( HRMonthly[OvertimeHours] )
+
+Basic Pay MUR = SUM ( HRMonthly[BasicPayMUR] )
+
+Absence Deduction MUR = SUM ( HRMonthly[AbsenceDeductionMUR] )
+
+Overtime Pay MUR = SUM ( HRMonthly[OvertimePayMUR] )
+
+Gross Pay MUR = SUM ( HRMonthly[GrossPayMUR] )
+
+Payroll Reconciliation MUR = [Gross Pay MUR] - [Basic Pay MUR] + [Absence Deduction MUR] - [Overtime Pay MUR]
+
+Employee Months = COUNTROWS ( HRMonthly )
+
+Average Pay per Employee Month MUR = DIVIDE ( [Gross Pay MUR], [Employee Months] )
+
+Overtime Share of Pay = DIVIDE ( [Overtime Pay MUR], [Gross Pay MUR] )
+
+Training Assigned = SUM ( HRMonthly[TrainingAssigned] )
+
+Training Completed = SUM ( HRMonthly[TrainingCompleted] )
+
+Training Completion Rate = DIVIDE ( [Training Completed], [Training Assigned] )
+
+Training Hours = SUM ( HRMonthly[TrainingHours] )
+
+Average Engagement = AVERAGE ( HRMonthly[EngagementScore] )
+
+Female Closing Headcount = CALCULATE ( [Closing Headcount], Employees[Gender] = "Female" )
+
+Female Representation = DIVIDE ( [Female Closing Headcount], [Closing Headcount] )
+
+Net Headcount Change = [Total Hires] - [Total Exits]
+
+Closing FTE =
+VAR M = MAX ( 'Calendar'[MonthStart] )
+RETURN CALCULATE ( SUM ( HRMonthly[ClosingFTE] ), REMOVEFILTERS ( 'Calendar' ), TREATAS ( { M }, HRMonthly[MonthStart] ) )
+
+Target Headcount = SUM ( StaffingTargets[TargetHeadcount] )
+
+Unfilled Posts =
+SUMX (
+    CROSSJOIN ( VALUES ( Branches[Branch] ), VALUES ( Roles[Role] ) ),
+    MAX ( 0, CALCULATE ( [Target Headcount] ) - CALCULATE ( [Closing Headcount] ) )
+)
+
+Part Time Closing Headcount = CALCULATE ( [Closing Headcount], Employees[EmploymentType] = "Part time" )
+
+Staffing Coverage = DIVIDE ( [Closing Headcount], [Target Headcount] )
+
+
+Brand Ambassador Headcount = CALCULATE ( [Closing Headcount], Employees[BrandAmbassador] = 1 )
+
+BOH Brand Ambassadors = CALCULATE ( [Brand Ambassador Headcount], Employees[AmbassadorArea] = "Back of House" )
+
+FOH Brand Ambassadors = CALCULATE ( [Brand Ambassador Headcount], Employees[AmbassadorArea] = "Front of House" )

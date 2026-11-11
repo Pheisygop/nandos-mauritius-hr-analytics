@@ -1,0 +1,113 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 128.23608471628978,
+            "y": 444.05154962334524
+          },
+          "nodeIndex": "Branches",
+          "nodeLineageTag": "0f433b99-2c40-4ddc-a7e1-b1483ce6c244",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 415.78913702748014,
+            "y": 391.20120064325124
+          },
+          "nodeIndex": "Calendar",
+          "nodeLineageTag": "96b62949-177a-4423-9efd-8e207bf69634",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 714.93479064477822,
+            "y": -50
+          },
+          "nodeIndex": "Employees",
+          "nodeLineageTag": "ecc2019b-5da4-4071-b654-c388b874becb",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 702.69062373296185,
+            "y": 300.67486604528926
+          },
+          "nodeIndex": "HRMonthly",
+          "nodeLineageTag": "ca902993-7cd3-46da-b82d-8ca2f5259348",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 948.9347906447781,
+            "y": 244.60060032162562
+          },
+          "nodeIndex": "OrganisationStructure",
+          "nodeLineageTag": "2a23bc00-c8ee-472f-a1d8-357c8cf4d7b7",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 339.885595424018,
+            "y": 98.6320284549804
+          },
+          "nodeIndex": "Roles",
+          "nodeLineageTag": "231ebfb8-ebb7-4b46-ac6d-9dc70cae0828",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 50,
+            "y": 192.02000755439553
+          },
+          "nodeIndex": "StaffingTargets",
+          "nodeLineageTag": "aac1e38e-a969-4091-978b-0850b6464669",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

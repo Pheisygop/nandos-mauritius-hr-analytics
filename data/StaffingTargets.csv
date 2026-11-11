@@ -1,0 +1,61 @@
+﻿Branch,Role,Department,TargetHeadcount,TargetBasis
+GBLC,Patrao,Management,1,User planning baseline; approximate for waiters
+GBLC,Assistant Manager,Management,2,User planning baseline; approximate for waiters
+GBLC,Barman,Front of House,3,User planning baseline; approximate for waiters
+GBLC,Back Griller,Kitchen,3,User planning baseline; approximate for waiters
+GBLC,Front Griller,Kitchen,3,User planning baseline; approximate for waiters
+GBLC,Cashier,Front of House,3,User planning baseline; approximate for waiters
+GBLC,Preper,Kitchen,2,User planning baseline; approximate for waiters
+GBLC,Scullery,Kitchen,2,User planning baseline; approximate for waiters
+GBLC,Host,Front of House,2,User planning baseline; approximate for waiters
+GBLC,Waiter,Front of House,12,User planning baseline; approximate for waiters
+Cascavale,Patrao,Management,1,User planning baseline; approximate for waiters
+Cascavale,Assistant Manager,Management,2,User planning baseline; approximate for waiters
+Cascavale,Barman,Front of House,3,User planning baseline; approximate for waiters
+Cascavale,Back Griller,Kitchen,3,User planning baseline; approximate for waiters
+Cascavale,Front Griller,Kitchen,3,User planning baseline; approximate for waiters
+Cascavale,Cashier,Front of House,3,User planning baseline; approximate for waiters
+Cascavale,Preper,Kitchen,2,User planning baseline; approximate for waiters
+Cascavale,Scullery,Kitchen,2,User planning baseline; approximate for waiters
+Cascavale,Host,Front of House,2,User planning baseline; approximate for waiters
+Cascavale,Waiter,Front of House,12,User planning baseline; approximate for waiters
+Phoenix,Patrao,Management,1,User planning baseline; approximate for waiters
+Phoenix,Assistant Manager,Management,2,User planning baseline; approximate for waiters
+Phoenix,Barman,Front of House,3,User planning baseline; approximate for waiters
+Phoenix,Back Griller,Kitchen,3,User planning baseline; approximate for waiters
+Phoenix,Front Griller,Kitchen,3,User planning baseline; approximate for waiters
+Phoenix,Cashier,Front of House,3,User planning baseline; approximate for waiters
+Phoenix,Preper,Kitchen,2,User planning baseline; approximate for waiters
+Phoenix,Scullery,Kitchen,2,User planning baseline; approximate for waiters
+Phoenix,Host,Front of House,2,User planning baseline; approximate for waiters
+Phoenix,Waiter,Front of House,12,User planning baseline; approximate for waiters
+Bagatelle,Patrao,Management,1,User planning baseline; approximate for waiters
+Bagatelle,Assistant Manager,Management,2,User planning baseline; approximate for waiters
+Bagatelle,Barman,Front of House,3,User planning baseline; approximate for waiters
+Bagatelle,Back Griller,Kitchen,3,User planning baseline; approximate for waiters
+Bagatelle,Front Griller,Kitchen,3,User planning baseline; approximate for waiters
+Bagatelle,Cashier,Front of House,3,User planning baseline; approximate for waiters
+Bagatelle,Preper,Kitchen,2,User planning baseline; approximate for waiters
+Bagatelle,Scullery,Kitchen,2,User planning baseline; approximate for waiters
+Bagatelle,Host,Front of House,2,User planning baseline; approximate for waiters
+Bagatelle,Waiter,Front of House,12,User planning baseline; approximate for waiters
+RTM,Patrao,Management,1,User planning baseline; approximate for waiters
+RTM,Assistant Manager,Management,2,User planning baseline; approximate for waiters
+RTM,Barman,Front of House,3,User planning baseline; approximate for waiters
+RTM,Back Griller,Kitchen,3,User planning baseline; approximate for waiters
+RTM,Front Griller,Kitchen,3,User planning baseline; approximate for waiters
+RTM,Cashier,Front of House,3,User planning baseline; approximate for waiters
+RTM,Preper,Kitchen,2,User planning baseline; approximate for waiters
+RTM,Scullery,Kitchen,2,User planning baseline; approximate for waiters
+RTM,Host,Front of House,2,User planning baseline; approximate for waiters
+RTM,Waiter,Front of House,12,User planning baseline; approximate for waiters
+Soflaw,Patrao,Management,1,User planning baseline; approximate for waiters
+Soflaw,Assistant Manager,Management,2,User planning baseline; approximate for waiters
+Soflaw,Barman,Front of House,3,User planning baseline; approximate for waiters
+Soflaw,Back Griller,Kitchen,3,User planning baseline; approximate for waiters
+Soflaw,Front Griller,Kitchen,3,User planning baseline; approximate for waiters
+Soflaw,Cashier,Front of House,3,User planning baseline; approximate for waiters
+Soflaw,Preper,Kitchen,2,User planning baseline; approximate for waiters
+Soflaw,Scullery,Kitchen,2,User planning baseline; approximate for waiters
+Soflaw,Host,Front of House,2,User planning baseline; approximate for waiters
+Soflaw,Waiter,Front of House,12,User planning baseline; approximate for waiters
